@@ -105,44 +105,27 @@ $(function() {
    * by the loadFeed function that the content actually changes.
    * Remember, loadFeed() is asynchronous.
    */
-  //   let oldFeed;
-  //   let newFeed;
-  //   beforeEach(function(done) {
-  //     loadFeed(0, function() {
-  //       oldFeed = document.querySelector('.feed').innerHTML;
-  //       loadFeed(1, function() {
-  //         newFeed = document.querySelector('.feed').innerHTML;
-  //         done();
-  //       });
-  //     });
-  //   });
-  //
-  //   it('the content changes after a new feed is loaded', function(done) {
-  //     expect(oldFeed !== newFeed).toBe(true);
-  //     done();
-  //   });
-  // });
   describe('New Feed Selection', function() {
 
     /* Test that ensures when a new feed is loaded
      * by the loadFeed function that the content actually changes.*/
-    let feedA,
-      feedB;
+    let oldFeed,
+      newFeed;
 
     beforeEach(function(done) {
-      loadFeed(0, () => {
-        feedA = document.querySelector('.feed').innerHTML;
+      loadFeed(0, function() {
+        oldFeed = document.querySelector('.feed').innerHTML;
       });
 
-      loadFeed(1, () => {
-        feedB = document.querySelector('.feed').innerHTML;
+      loadFeed(1, function() {
+        newFeed = document.querySelector('.feed').innerHTML;
         done();
       });
     });
 
     /* Check if feeds have been added to the feedList*/
-    it('the content changes after a new feed is loaded', (done) => {
-      expect(feedB !== feedA).toBe(true);
+    it('the content changes after a new feed is loaded', function(done) {
+      expect(newFeed !== oldFeed).toBe(true);
       done();
     });
   });
