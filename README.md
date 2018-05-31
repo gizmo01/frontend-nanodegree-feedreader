@@ -3,8 +3,8 @@ This project is part of the Udacity Google front-end developer NanoDegree Schola
 The goal of this project is to finish someone's feed reader tests.
 
 ## Installation
-Clone or fork the repository git clone https://github.com/gizmo01/frontend-nanodegree-feedreader.git
-Open up index.html from the root directory
+* Clone or fork the repository git clone https://github.com/gizmo01/frontend-nanodegree-feedreader.git
+* Open up index.html from the root directory
 
 ## Test Cases
 * RSS feeds
