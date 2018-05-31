@@ -1,4 +1,26 @@
-# Project Overview
+# Feed Reader test
+This project is part of the Udacity Google front-end developer NanoDegree Scholarschip.
+The goal of this project is to finish someone's feed reader tests.
+
+## Installation
+Clone or fork the repository git clone https://github.com/gizmo01/frontend-nanodegree-feedreader.git
+Open up index.html from the root directory
+
+## Test Cases
+* RSS feeds
+  * Check if allFeeds is defined and not empty
+  * Check if allFeeds has an URL inside
+  * Check if allFeeds has a name
+* Menu
+  * Is menu hidden by default?
+  * Check if menu visibility changes when there is a mouse click
+* Initial entries
+  * Check if there is at least one .entry element within the .feed
+* New feed selection
+  * Check if there is a new feed loaded
+  * Check if the new loaded feed is not equal to the old feed
+
+## Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
 
@@ -44,5 +66,5 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
